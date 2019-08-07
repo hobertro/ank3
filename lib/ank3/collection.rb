@@ -1,5 +1,5 @@
 require 'yaml'
-# require_relative 'card.rb'
+require 'ank3/card'
 
 module Ank3
   class Collection
