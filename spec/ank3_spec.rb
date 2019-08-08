@@ -2,11 +2,7 @@ require 'rspec'
 require 'json'
 require 'yaml'
 require 'pry'
-# require 'spec_helper'
 require 'ank3'
-# require './card.rb'
-# require './card_collection.rb'
-
 
 RSpec.describe Ank3 do
   let(:data) do
