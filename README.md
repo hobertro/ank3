@@ -37,15 +37,48 @@ To parse a YAML file to a Anki .txt file, simply run:
 
 ```./ank3 covert [FILE.yml]``` in the command line.
 
-To generate a boilerplate file, simply run:
-
-```./ank3 generate_boilerplate [number of cards]``` and it will generate a YAML file
-containing an array with [number of cards] of hashes.
-
 Example:
 
-```./ank3 generate_boilerplate 5``` will generate a YAML file with 5 hashes, each representing a card.
+Using a YAML file that looks like:
 
+```yaml
+---
+- front: 'What is 1+1?'
+  back: 'Two'
+  tags: []
+---
+- front: 'What is H20?'
+  back: 'Water'
+  tags: []
+```
+
+will generate a .txt file that looks like:
+
+```
+What is 1+1?; Two
+What is H2O?; Water
+```
+
+To generate a boilerplate file, simply run:
+
+```./ank3 generate_boilerplate [number of cards]``` and it will generate a YAML file containing an array with [number of cards] of hashes.
+
+For example:
+
+```./ank3 generate_boilerplate 3``` will generate a YAML file with 5 hashes, each representing a card looking like this:
+
+```yaml
+---
+- front: ''
+  back: ''
+  tags: []
+- front: ''
+  back: ''
+  tags: []
+- front: ''
+  back: ''
+  tags: []
+```
 
 ## Development
 
