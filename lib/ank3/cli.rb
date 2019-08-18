@@ -6,7 +6,7 @@ module Ank3
     end
 
     desc "generate_boilerplate", "Generate a boilerplate YAML file"
-    def generate_boilerplate(number = 1, file_name = "Ank3.yml")
+    def generate_boilerplate(number = 1, file_name = "ank3.yml")
       Ank3::Collection.generate_boilerplate_file(number, file_name)
     end
   end
