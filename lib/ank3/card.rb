@@ -1,7 +1,3 @@
-require 'json'
-require 'pry'
-require 'yaml'
-
 module Ank3
   class Card
     attr_reader :data

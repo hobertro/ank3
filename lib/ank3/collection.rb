@@ -25,7 +25,7 @@ module Ank3
 
     def self.generate_boilerplate_file(number = 1, file_name = "Ank3.yml")
       array_of_hashes = []
-      number.times do 
+      number.to_i.times do 
         array_of_hashes << {
           "front" => "",
           "back"  => "",
