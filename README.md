@@ -1,9 +1,7 @@
 # Ank3
 
 Ank3 is a simple command line interface (CLI) to create text files that can be ingested by Anki to create Anki cards.
-You give it a YAML file that contains an array of hashes that represent the Anki cards and Ank3
-will parse the YAML file to create Anki cards. Alternatively, you can generate a boilerplate YAML
-file where you can create cards with a front, back, and tags.
+Alternatively, you can generate a boilerplate YAML file where you can create cards with a front, back, and tags.
 
 ## Motivation and Anki work flow
 
