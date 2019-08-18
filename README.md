@@ -55,6 +55,7 @@ Using a YAML file that looks like:
 will generate a .txt file that looks like:
 
 ```
+# Anki .txt file format that represents a card with front and back
 What is 1+1?; Two
 What is H2O?; Water
 ```
@@ -65,7 +66,7 @@ To generate a boilerplate file, simply run:
 
 For example:
 
-```./ank3 generate_boilerplate 3``` will generate a YAML file with 5 hashes, each representing a card looking like this:
+```./ank3 generate_boilerplate 3``` will generate a YAML file with 3 hashes, each representing a card looking like this:
 
 ```yaml
 ---
