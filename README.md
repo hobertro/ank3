@@ -55,7 +55,6 @@ Using a YAML file that looks like:
 will generate a .txt file that looks like:
 
 ```
-# Anki .txt file format that represents a card with front and back
 What is 1+1?; Two
 What is H2O?; Water
 ```
