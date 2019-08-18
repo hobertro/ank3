@@ -1,9 +1,3 @@
-require 'rspec'
-require 'json'
-require 'yaml'
-require 'pry'
-require 'ank3'
-
 RSpec.describe Ank3 do
   let(:data) do
     {

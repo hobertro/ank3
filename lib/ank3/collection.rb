@@ -1,9 +1,5 @@
-require 'yaml'
-require 'ank3/card'
-require 'thor'
-
 module Ank3
-  class Collection < Thor
+  class Collection
     attr_reader :cards, :data
 
     def initialize(file)
