@@ -1,8 +1,9 @@
 module Ank3
   class Collection
-    attr_reader :cards, :data
+    attr_reader :cards, :data, :basename
 
     def initialize(file)
+      @basename = File.basename(file, ".yml")
       @data  = YAML.load(File.read(file))
       @cards = []
       convert_data_to_cards
@@ -16,8 +17,9 @@ module Ank3
       @cards.map { |card| card.convert if front_and_back_present?(card) }.join("")
     end
 
-    def write_to_file(name = "cards")
-      File.open("#{name}.txt", "w") do |file|
+    def write_to_file(name = "")
+      file_name = name != "" ? name : @basename
+      File.open("#{file_name}.txt", "w") do |file|
         file.write(convert)
         file
       end

@@ -36,6 +36,17 @@ RSpec.describe Ank3 do
       end
     end
     context "#write_to_file" do
+      context "file name" do
+        it "names file with given name argument" do
+          response = collection.write_to_file("test_example")
+          expect(File.basename(response)).to eq "test_example.txt"
+        end
+        it "adds the name of the yml file is no name is given" do
+          response = collection.write_to_file
+          expect(File.basename(response)).to eq "example.txt"
+        end
+      end
+
       it "writes the strings to a file" do
         response = collection.write_to_file
         expect(File.read(response)).to eq "What is 1+1?; Two\nWhat is H2O?; Water\n"
