@@ -64,6 +64,7 @@ RSpec.describe Ank3 do
         it "generates a boilerplate YAML file" do
           response = Ank3::Collection.generate_boilerplate_file
           expect(YAML.load(File.read(response))).to eq [{ "front" => "", "back" => "", "tags" => []}]
+          expect(File.read(response)).to eq "---\n- front: \"\"\n  back: \"\"\n  tags: []\n"
         end
       end
     end
