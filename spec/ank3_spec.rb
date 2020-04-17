@@ -7,7 +7,7 @@ RSpec.describe Ank3 do
     }
   end
 
-  describe "Card" do
+  describe "Ank3::Card" do
     context "convert" do
       it "converts data to a string" do
         expect(Ank3::Card.new(data).convert).to eq "What is 1+1?; Two\n"
